@@ -1,44 +1,44 @@
 import openai
 import streamlit as st
 
-# Set your OpenAI API key here or via st.secrets
+# Set your OpenAI API key securely
 api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = api_key
 
 def get_chatbot_response(user_input):
-    # Use OpenAI's new API to generate a response
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},  # Ensure proper string closure
-            {"role": "user", "content": user_input}  # Ensure proper string closure
-        ],
-        temperature=0.7,
-        max_tokens=150
-    )
-    return response['choices'][0]['message']['content']
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": user_input}
+            ],
+            temperature=0.7,
+            max_tokens=150
+        )
+        return response['choices'][0]['message']['content']
+    except Exception as e:
+        st.error(f"Error: {e}")
+        return "Sorry, something went wrong."
 
-# Streamlit interface
-st.title("AI Chatbot")
+st.set_page_config(page_title="AI Chatbot", layout="centered")
+st.title("💬 AI Chatbot")
 
 user_input = st.text_input("Enter your message:")
 
 if user_input:
-    # Get the chatbot response
+    st.write("🧠 User asked:", user_input)
     chatbot_response = get_chatbot_response(user_input)
 
-    # Customize response for secure interactions
     if "balance" in user_input.lower():
         chatbot_response = """
-            To assist you with checking your balance, please visit our official website and log in securely. 
-            You can also contact our customer support at 1-800-123-4567 for further assistance. 
-            Is there anything else I can help you with today?
+        🔐 For your security, please check your balance by logging into our official banking app or website.  
+        📞 Or call support at **0800-123-4567**.
         """
     elif "fraud" in user_input.lower():
         chatbot_response = """
-            If you suspect fraudulent activity on your account, please report it immediately by contacting our customer support at 1-800-123-4567 or via the secure portal. 
-            How else may I assist you?
+        ⚠️ To report fraud, contact our 24/7 hotline at **0800-123-4567**.  
+        🔒 We don’t collect sensitive info here.
         """
 
-    # Display the chatbot's response
-    st.write(chatbot_response)
+    st.markdown(chatbot_response)

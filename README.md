@@ -1,81 +1,106 @@
-<<<<<<< HEAD
-# 💬 Banking Chatbot Prototype (OpenAI v1+ Ready)
+# 💬 AI Chatbot Research Prototype
 
-A GDPR-aware banking chatbot built with Streamlit and OpenAI GPT-3.5 using the updated OpenAI Python SDK (v1+).
+A multi-platform conversational AI assistant built for the banking industry using:
+- 🔹 OpenAI GPT (via Streamlit)
+- 🔹 IBM Watson Assistant
+- 🔹 ChatGPT Custom GPT
 
-## 🧠 Features
-- Ethical, regulation-aware chatbot
-- Prompt-engineered for tone and fallback logic
-- Local environment using `.env` for API keys
+This project explores responsible AI development aligned with the **AI Act** and **GDPR**, including privacy safeguards, fallback handling, and compliant conversational design.
 
-## 🚀 How to Run
+---
 
-1. Paste your OpenAI API key in `.env`:
+## 🌐 Live Demo
+
+ **Visit the full live demo site:**  
+ [https://gabrijelam1.github.io/ai-chatbot-research/](https://gabrijelam1.github.io/ai-chatbot-research/)
+
+The site includes:
+-  GPT Prototype (ChatGPT Custom GPT)
+-  IBM Watson Assistant (embedded)
+-  Streamlit Chatbot using OpenAI API
+
+---
+
+##  Chatbot Use Cases
+
+- Report a lost bank card
+- Check account balance (simulated)
+- Report fraud
+- Loop between actions with fallback support
+- Receive GDPR-compliant privacy reminders
+
+---
+
+##  Tech Stack
+
+| Component         | Tool                  |
+|------------------|-----------------------|
+| Natural Language | OpenAI GPT-3.5 Turbo  |
+| No-code Builder  | ChatGPT Custom GPT    |
+| Assistant Flow   | IBM Watson Assistant  |
+| UI Framework     | Streamlit             |
+| Hosting          | GitHub Pages, Streamlit Cloud |
+| Privacy          | `.env` + Streamlit Secrets |
+| Governance       | AI Act, GDPR principles |
+
+---
+
+##  AI Ethics + Prompt Engineering
+
+This assistant is designed with:
+- ✅ **Prompt Engineering Techniques**
+- ✅ **Regulatory Mapping** (GDPR & AI Act)
+- ✅ **Bias Mitigation** (neutral tone & fallback messages)
+- ✅ **No PII Storage** or sensitive data collection
+
+---
+
+## 📂 Repository Contents
+
 ```
-OPENAI_API_KEY=your_key_here
+ai-chatbot-research/
+├── app.py              # OpenAI Streamlit chatbot
+├── index.html          # GitHub Pages homepage
+├── requirements.txt    # Python dependencies
+├── README.md           # This file
+```
+
+---
+
+##  Getting Started (Local)
+
+1. Clone this repo:
+```bash
+git clone https://github.com/gabrijelam1/ai-chatbot-research.git
+cd ai-chatbot-research
 ```
 
 2. Install dependencies:
-```
-pip install streamlit openai python-dotenv
+```bash
+pip install -r requirements.txt
 ```
 
-3. Run the chatbot:
+3. Set your OpenAI API key:
+```bash
+echo "OPENAI_API_KEY=your_key_here" > .env
 ```
+
+4. Run the app:
+```bash
 streamlit run app.py
 ```
 
-Enjoy! 🧑‍💻
-=======
-# AI Chatbot Research Project (Self-Initiated)
+---
 
-## Overview
+##  Author
 
-This research project explores the development of an AI-powered banking chatbot using ChatGPT and IBM Watson Assistant. The chatbot aims to provide financial guidance, improve digital banking interactions, and maintain strong compliance with the AI Act and GDPR.
+**Gabrijela Marić**  
+ AI & Data Analyst | Chatbots · Compliance · Insights
+ [Project Page](https://gabrijelam1.github.io/ai-chatbot-research/)  
 
-## Goals
+---
 
-- Explore ethical and compliant chatbot development
-- Test prompt engineering methods to improve chatbot accuracy
-- Assess real-world use cases in financial services
+## 📜 License
 
-## Tools Used
-
-- ChatGPT API
-- IBM Watson Assistant
-- Prompt engineering techniques
-- Ethical AI compliance frameworks (GDPR, AI Act)
-
-## Key Features
-
-- Natural Language Understanding (NLU)
-- Financial guidance Q&A module
-- Bias mitigation and explainability layers
-- Prompt-optimized conversation flow
-
-## Methodology
-
-1. **Literature Review**
-2. **Tool Selection** – ChatGPT + IBM Watson
-3. **Prototype Development** – Banking-related prompts
-4. **Compliance Analysis** – AI Act + GDPR
-5. **Evaluation** – User interaction simulations
-
-## Challenges & Solutions
-
-| Challenge | Solution |
-|----------|----------|
-| Balancing automation and compliance | Added rule-based constraints |
-| Improving chatbot accuracy | Refined prompts through iterative testing |
-| Ethical deployment risks | Added fallback responses + bias detection |
-
-## Future Work
-
-- Multilingual support
-- Advanced fraud detection via AI
-- Personalized experiences using ML
-
-## Conclusion
-
-This project demonstrates practical insights into building ethical, regulation-compliant chatbots. It highlights the importance of prompt engineering, responsible AI use, and thoughtful deployment in sensitive domains like banking.
->>>>>>> 0daca95c440406d7753898214e26b15231311c4c
+This project is for academic and portfolio use only.  
+All trademarks, company names, and scenarios are fictional and for demonstration purposes only.
