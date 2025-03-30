@@ -6,7 +6,7 @@ api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = api_key
 
 def get_chatbot_response(user_input):
-    # Use OpenAI's API to generate a response
+    # Use OpenAI's new API to generate a response
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -16,7 +16,7 @@ def get_chatbot_response(user_input):
         temperature=0.7,
         max_tokens=150
     )
-    return response.choices[0].message["content"]
+    return response['choices'][0]['message']['content']
 
 # Streamlit interface
 st.title("AI Chatbot")
