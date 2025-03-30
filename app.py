@@ -7,13 +7,14 @@ openai.api_key = api_key
 
 def get_chatbot_response(user_input):
     # Use OpenAI's API to generate a response
-    response = openai.Completion.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": user_input}
         ],
-        temperature=0.7
+        temperature=0.7,
+        max_tokens=150
     )
     return response.choices[0].message["content"]
 
@@ -23,7 +24,7 @@ st.title("AI Chatbot")
 user_input = st.text_input("Enter your message:")
 
 if user_input:
-    # Generate a response
+    # Get the chatbot response
     chatbot_response = get_chatbot_response(user_input)
 
     # Customize response for secure interactions
