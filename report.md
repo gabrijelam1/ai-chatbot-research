@@ -1,76 +1,48 @@
-# AI Chatbot Research Project (Self-Initiated)
+# AI Chatbot Research Project
 
-## Introduction
+## Project Goal
 
-This research project explores the design and development of a conversational AI chatbot for the banking industry, using both ChatGPT and IBM Watson Assistant. The chatbot was designed as a proof of concept to improve digital customer service while aligning with ethical and legal standards, including the AI Act and GDPR.
+The goal of this project was to explore the fundamentals of conversational AI by building a simple chatbot prototype. As someone transitioning into the AI and data field without a formal technical background, this project served as a practical way to understand how rule-based systems function, what their limitations are, and how they tie into broader topics like AI governance, prompt design, and ethical implementation.
 
-With the rise of AI in financial services, chatbots have become an increasingly relevant solution for handling routine inquiries, reducing operational costs, and enhancing customer engagement. However, deploying such systems responsibly requires thoughtful prompt engineering, risk assessment, and compliance awareness—key elements explored throughout this project.
+## Tools & Technologies
 
-## Objectives
+- **Language:** Python  
+- **Framework:** Streamlit (for interactive front-end)  
+- **Deployment:** GitHub Pages (for project showcase)
 
-The key goals of this project were to:
-- Develop a prototype chatbot capable of answering banking-related questions
-- Explore prompt engineering techniques to improve user interaction
-- Ensure the chatbot followed principles of responsible AI use and regulatory compliance
-- Evaluate conversational AI platforms (ChatGPT and IBM Watson) for real-world deployment
+## Implementation Overview
 
-## Tools and Technologies
+This prototype is a basic rule-based chatbot created using Python and Streamlit. It processes user input with conditional logic and returns predefined responses based on keyword matching. The main purpose of this implementation is educational: to build intuition about how simple chatbots work and where their limits lie.
 
-The following technologies were used in the project:
-- **ChatGPT (OpenAI API):** For flexible and natural conversational capabilities
-- **IBM Watson Assistant:** For rule-based, enterprise-level dialogue handling
-- **Prompt Engineering Techniques:** To refine chatbot responses
-- **Ethical AI Frameworks:** Including the AI Act and GDPR for responsible AI design
+## Key Concepts Explored
 
-## Methodology
+- **Conversational Flow Design:** Structuring logic to simulate natural interaction  
+- **Rule-Based Systems:** Building without machine learning or NLP  
+- **Prompt Engineering (Basic):** Designing inputs and outputs to guide user interaction  
+- **Limitations of Simplicity:** Understanding what rule-based systems can and cannot do
 
-The project was structured in five key phases:
+## Ethics and Governance Reflections
 
-1. **Literature Review:**  
-   Studied industry best practices in conversational AI, regulatory concerns, and chatbot deployment in banking.
+While the technical implementation is simple, it sparks essential questions relevant to AI governance:
 
-2. **Tool Selection:**  
-   Selected ChatGPT for its flexibility and IBM Watson for its structure and integration support.
+- What does transparency look like in chatbot responses?
+- How do we prevent user misunderstanding in automated systems?
+- What kind of accountability applies to non-intelligent bots?
 
-3. **Prototype Development:**  
-   Created simple chatbot flows using prompts based on banking FAQs, including account services, transactions, and fraud reporting.
-
-4. **Compliance Analysis:**  
-   Mapped chatbot features against GDPR requirements (e.g., data minimization, transparency) and reviewed how the AI Act could impact chatbot deployment, particularly around risk classification.
-
-5. **Evaluation:**  
-   Simulated user interactions to evaluate prompt quality, accuracy, tone, and user experience across both platforms.
-
-## Key Features of the Chatbot
-
-- Natural language understanding for interpreting user intent
-- Financial Q&A logic using both dynamic and rule-based flows
-- Bias mitigation via neutral tone and inclusive prompts
-- Explainable fallback mechanisms for ambiguous queries
-
-## Challenges and Solutions
-
-Throughout the project, several key challenges emerged:
-
-- **Compliance vs. Flexibility:**  
-  Balancing automation with regulatory requirements was addressed by adding rule-based guardrails and fallback messages.
-
-- **Prompt Clarity:**  
-  Some early prompts led to unclear or inconsistent answers. This was improved through iterative testing and rephrasing.
-
-- **Ethical Risks:**  
-  To reduce the chance of misinformation or bias, the chatbot was limited to pre-approved financial scenarios, and users were reminded to contact human support for sensitive issues.
+These themes are central to modern AI policy, and this prototype serves as a sandbox for reflecting on them in a low-risk, hands-on way.
 
 ## Future Improvements
 
-Although this was a prototype-level research project, future development could include:
-- Multilingual capabilities to support non-German or non-English speaking users
-- Integration with secure backend systems for personalized account support
-- Enhanced fraud detection using machine learning
-- A governance dashboard to track chatbot compliance metrics
+- **Expand conversation paths** to create more realistic dialogue  
+- **Integrate OpenAI or other LLM APIs** for intelligent response generation  
+- **Add basic intent recognition** for improved interaction flow  
+- **Enable user feedback logging** to iterate based on real use
+
+## Demo & Repository
+
+- **Live Demo:** [Chatbot on GitHub Pages](https://gabrijelam1.github.io/ai-chatbot-research/)  
+- **Source Code:** [View on GitHub](https://github.com/gabrijelam1/ai-chatbot-research)
 
 ## Conclusion
 
-This project provided valuable insight into building a responsible, regulation-aware AI chatbot for the banking sector. It demonstrated how prompt engineering, platform evaluation, and legal frameworks like the AI Act and GDPR must work together in AI product development.
-
-By comparing ChatGPT's generative strengths with IBM Watson's control and structure, the project highlighted trade-offs between creativity and compliance. Ultimately, this research confirms that well-designed chatbots, when guided by ethical and legal principles, can serve as powerful tools in delivering customer value while preserving trust.
+This project represents my first step into hands-on AI development and governance. It combines technical learning with critical reflection on how conversational systems interact with users and policy. Future iterations will include LLMs, logging, and dynamic conversations — building toward more robust and ethically-aware AI systems.
