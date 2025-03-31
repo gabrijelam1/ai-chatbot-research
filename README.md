@@ -1,106 +1,53 @@
-# 💬 AI Chatbot Research Prototype
+# AI Chatbot Research Project
 
-A multi-platform conversational AI assistant built for the banking industry using:
-- 🔹 OpenAI GPT (via Streamlit)
-- 🔹 IBM Watson Assistant
-- 🔹 ChatGPT Custom GPT
+![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-This project explores responsible AI development aligned with the **AI Act** and **GDPR**, including privacy safeguards, fallback handling, and compliant conversational design.
+A simple rule-based chatbot built using Python and Streamlit to explore the fundamentals of conversational AI, prompt engineering, and AI governance.
 
----
+This project serves as an entry point for understanding chatbot logic, how rule-based systems operate, and how they connect to broader ethical and governance considerations in AI development.
 
-## 🌐 Live Demo
+## Demo
 
- **Visit the full live demo site:**  
- [https://gabrijelam1.github.io/ai-chatbot-research/](https://gabrijelam1.github.io/ai-chatbot-research/)
+- [Live Demo](https://gabrijelam1.github.io/ai-chatbot-research/)
+- [Full Report](https://github.com/gabrijelam1/ai-chatbot-research/blob/main/report.md)
+- [References](https://github.com/gabrijelam1/ai-chatbot-research/blob/main/references.md)
 
-The site includes:
--  GPT Prototype (ChatGPT Custom GPT)
--  IBM Watson Assistant (embedded)
--  Streamlit Chatbot using OpenAI API
+## Features
 
----
+- Built in **Python** using **Streamlit**  
+- Runs entirely client-side — no backend or LLM required  
+- Basic chatbot logic using keyword-based routing  
+- Designed with ethical questions and governance themes in mind  
+- Includes detailed report and academic/policy references
 
-##  Chatbot Use Cases
+## Tech Stack
 
-- Report a lost bank card
-- Check account balance (simulated)
-- Report fraud
-- Loop between actions with fallback support
-- Receive GDPR-compliant privacy reminders
+- **Python**
+- **Streamlit**
+- **GitHub Pages** (for deployment)
+- Markdown (.md) files for report and documentation
 
----
+## Project Goals
 
-##  Tech Stack
+- Learn the foundations of chatbot development
+- Reflect on transparency, fairness, and user trust in conversational systems
+- Build a project grounded in AI governance concepts
+- Provide a platform for future integration of OpenAI or other LLMs
 
-| Component         | Tool                  |
-|------------------|-----------------------|
-| Natural Language | OpenAI GPT-3.5 Turbo  |
-| No-code Builder  | ChatGPT Custom GPT    |
-| Assistant Flow   | IBM Watson Assistant  |
-| UI Framework     | Streamlit             |
-| Hosting          | GitHub Pages, Streamlit Cloud |
-| Privacy          | `.env` + Streamlit Secrets |
-| Governance       | AI Act, GDPR principles |
+## Future Improvements
 
----
+- Integrate LLMs (e.g., OpenAI API) for smarter responses  
+- Expand conversation flows with dynamic prompts  
+- Add intent recognition or keyword expansion  
+- Collect basic feedback for iterative improvements
 
-##  AI Ethics + Prompt Engineering
+## License
 
-This assistant is designed with:
-- ✅ **Prompt Engineering Techniques**
-- ✅ **Regulatory Mapping** (GDPR & AI Act)
-- ✅ **Bias Mitigation** (neutral tone & fallback messages)
-- ✅ **No PII Storage** or sensitive data collection
+This project is licensed under the [MIT License](LICENSE).  
+![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 
----
-
-## 📂 Repository Contents
-
-```
-ai-chatbot-research/
-├── app.py              # OpenAI Streamlit chatbot
-├── index.html          # GitHub Pages homepage
-├── requirements.txt    # Python dependencies
-├── README.md           # This file
-```
-
----
-
-##  Getting Started (Local)
-
-1. Clone this repo:
-```bash
-git clone https://github.com/gabrijelam1/ai-chatbot-research.git
-cd ai-chatbot-research
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Set your OpenAI API key:
-```bash
-echo "OPENAI_API_KEY=your_key_here" > .env
-```
-
-4. Run the app:
-```bash
-streamlit run app.py
-```
-
----
-
-##  Author
+## Author
 
 **Gabrijela Marić**  
- AI & Data Analyst | Chatbots · Compliance · Insights
- [Project Page](https://gabrijelam1.github.io/ai-chatbot-research/)  
-
----
-
-## 📜 License
-
-This project is for academic and portfolio use only.  
-All trademarks, company names, and scenarios are fictional and for demonstration purposes only.
+Aspiring Data & AI Analyst | Python · Streamlit · Chatbots · AI Governance
+[LinkedIn](https://www.linkedin.com/in/gabrijelamaric/)
