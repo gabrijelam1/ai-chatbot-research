@@ -49,5 +49,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## Author
 
 **Gabrijela Marić**  
-Aspiring Data & AI Analyst | Python · Streamlit · Chatbots · AI Governance
+Aspiring Data & AI Analyst | Streamlit · Chatbots · AI Governance
 [LinkedIn](https://www.linkedin.com/in/gabrijelamaric/)
