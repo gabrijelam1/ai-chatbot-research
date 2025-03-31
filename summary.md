@@ -1,11 +1,21 @@
-# Executive Summary: AI Chatbot Research Project
+# Project Summary
 
-This self-initiated project explores the design of a conversational AI chatbot for banking support using ChatGPT and IBM Watson Assistant. The primary goal was to develop a prototype capable of answering common customer questions while aligning with AI governance principles, including GDPR and the EU AI Act.
+This project explores the fundamentals of conversational AI through the development of a simple, rule-based chatbot built using Python and Streamlit.
 
-The chatbot was built as a proof of concept, focusing on responsible prompt engineering, natural language understanding, and ethical deployment. Testing revealed the strengths of generative AI (ChatGPT) in delivering flexible and natural conversations, alongside the control and structure of IBM Watson in enterprise environments.
+The goal was to understand how non-ML chatbot logic works, reflect on its limitations, and tie it into larger themes like AI governance, prompt engineering, and ethical communication. The chatbot runs locally in a browser and responds to basic user input through hard-coded logic. While limited in functionality, it lays the groundwork for future improvements.
 
-The project evaluated key factors such as prompt clarity, fallback handling, and user experience, while identifying solutions for balancing automation with legal compliance. A lightweight knowledge base was created using prompts focused on banking services, with fallback strategies to handle sensitive or ambiguous queries.
+The prototype was also developed as part of a learning journey into AI systems and digital policy. Its development draws on EU guidance, ethical frameworks, and documentation from leading AI tools.
 
-By comparing AI platforms and assessing compliance risks, the project highlighted important trade-offs between innovation and responsibility. It concludes that well-designed, governance-aware chatbots can improve digital banking experiences without compromising transparency or trust.
+### Highlights:
+- Built using Python and Streamlit
+- Hosted via GitHub Pages (fully accessible demo)
+- Explores chatbot logic, user interaction, and basic prompt design
+- Connected to themes in AI transparency, accountability, and governance
+- Includes full project report and references to ethical and regulatory sources
 
-This project reflects applied knowledge in AI governance, prompt engineering, and ethical AI strategy, especially within regulated industries.
+This project will continue to evolve with the integration of LLMs (like OpenAI) and real-time user feedback mechanisms.
+
+### Links:
+- [Live Demo](https://gabrijelam1.github.io/ai-chatbot-research/)
+- [Full Report](https://github.com/gabrijelam1/ai-chatbot-research/blob/main/report.md)
+- [References](https://github.com/gabrijelam1/ai-chatbot-research/blob/main/references.md)
